@@ -4,6 +4,8 @@ LABEL maintainer="ramadhan.gerry@gmail.com"
 
 WORKDIR /app
 
+COPY . .
+
 RUN apt update
 
 RUN apt install -y git build-essential automake autoconf libopencv-dev libgtkmm-2.4-dev python3.8 
